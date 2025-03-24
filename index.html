@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abou Idi Mahamane Lawali</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#interets">Centres d’intérêts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="accueil">
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <p>Découvrez mon parcours, mes compétences et mes projets.</p>
+    </section>
+
+    <!-- Section À propos -->
+<section id="apropos">
+    <div class="apropos-container">
+        <div class="text">
+            <h2>À propos de moi</h2>
+            <p>Je suis Abou Idi Mahamane Lawali, un passionné du développement web et mobile avec une solide expérience en génie logiciel. 
+                Titulaire d’un Bachelor en informatique, j’ai travaillé sur plusieurs projets, allant de la création de sites web dynamiques à des applications de gestion complètes.</p>
+        </div>
+        <div class="photo">
+            <img src="photo.jpg" alt="Photo de Abou Idi Mahamane Lawali">
+        </div>
+    </div>
+</section>
+
+
+    <!-- Section Compétences -->
+    <section id="competences">
+        <h2>Mes Compétences</h2>
+        <ul>
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+            <li>Développement Frontend</li>
+            <li>Développement Backend</li>
+        </ul>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        <p>Voici quelques projets sur lesquels j’ai travaillé :</p>
+        <div class="projet">
+            <h3>Projet 1</h3>
+            <p>Dans le cadre de mon mémoire, j’ai conçu un outil d’interrogation de base de données pour la Direction Générale du Trésor et de la Comptabilité Publique. Ce système permet aux agents d’accéder rapidement aux informations financières et comptables.
+                🔹 Technologies utilisées : Java, NetBeans, MySQL
+                🔹 Fonctionnalités principales :
+                
+                Recherche avancée avec filtres dynamiques
+                
+                Affichage et exportation des résultats sous différents formats (PDF, Excel)
+                
+                Sécurisation des accès avec authentification</p>
+        </div>
+        <div class="projet">
+            <h3>Projet 2</h3>
+            <p>Lors de mon stage à la Direction Générale des Impôts, j’ai développé une plateforme de simulation de taxe destinée à aider les contribuables et les agents fiscaux à calculer avec précision les montants à payer selon les réglementations en vigueur.
+                🔹 Technologies utilisées : Laravel, PHP, MySQL
+                🔹 Fonctionnalités principales :
+                
+                Calcul automatique des taxes en fonction des données saisies
+                
+                Génération de rapports détaillés
+                
+                Interface intuitive pour une meilleure accessibilité
+                
+                </p>
+        </div>
+    </section>
+
+    <!-- Section Centres d'intérêts -->
+    <section id="interets">
+        <h2>Centres d’intérêts </h2>
+        <p>💻 Développement web et mobile : Passionné par le code, j’aime créer des applications performantes et ergonomiques avec Laravel, Symfony, Flutter, et WordPress.
+
+            📚 Formation et partage de connaissances : J’adore transmettre mon savoir en programmation et bureautique à travers mes formations et ma plateforme ElearnTech.
+            
+            🚀 Entrepreneuriat numérique : Fondateur de Dev Together, je veux offrir des services numériques et former des jeunes pour lutter contre le chômage.
+            
+            🤖 Nouvelles technologies & cybersécurité : Toujours curieux d’apprendre sur les dernières innovations, notamment Metasploit pour la sécurité informatique.
+            
+            ⚽ Football (Supporter du Real Madrid) : Passionné par le foot, je suis un grand fan du Real Madrid et j’aime suivre leurs performances.
+            
+            📸 Infographie & design : Intéressé par la création graphique, notamment avec Photoshop, pour améliorer l’esthétique des projets numériques.</p>
+    </section>
+
+    <!-- Formulaire de Contact -->
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="contact.php" method="POST">
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" required>
+            
+            <label for="message">Message :</label>
+            <textarea id="message" required></textarea>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Portfolio Abou Idi Mahamane Lawali- Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

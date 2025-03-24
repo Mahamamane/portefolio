@@ -1,0 +1,278 @@
+/* Importation de la police moderne */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styles de la navigation */
+header {
+    background: #1E1E2F;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #ff6f61;
+    border-radius: 5px;
+}
+
+/* Sections générales (réduction des espaces) */
+section {
+    padding: 50px 15px; /* Moins d'espace vertical */
+    text-align: center;
+    min-height: auto; /* Supprime la hauteur minimum forcée */
+    margin-bottom: 30px; /* Réduit l'espace entre les sections */
+}
+
+h1, h2 {
+    margin-bottom: 10px; /* Moins d’espace sous les titres */
+}
+
+p {
+    margin-bottom: 15px; /* Réduction de l'espace sous les paragraphes */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Accueil (réduit) */
+#accueil {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Réduction de la hauteur */
+    padding: 30px 15px;
+    text-align: center;
+}
+
+#accueil h1 {
+    font-size: 1.8rem; /* Taille réduite */
+}
+
+#accueil p {
+    font-size: 1rem; /* Texte plus compact */
+    max-width: 80%;
+}
+
+/* Section À propos */
+.apropos-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.text {
+    flex: 1;
+    max-width: 55%;
+    text-align: left;
+}
+
+.photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff6f61;
+}
+
+/* Compétences */
+#competences ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#competences ul li {
+    list-style: none;
+    background: #ff6f61;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Projets */
+#projets, #interets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projet {
+    width: 48%;
+    background: #f4f4f4;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.projet:hover {
+    background: #ddd;
+}
+
+/* Centres d'intérêt */
+#interets p {
+    text-align: left;
+    max-width: 95%;
+    margin: auto;
+}
+
+/* Formulaire de contact */
+form {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: #ff6f61;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e85b50;
+}
+
+/* Footer */
+footer {
+    background: #1E1E2F;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 768px) {
+    .apropos-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .photo img {
+        width: 140px;
+        height: 140px;
+    }
+
+    #competences ul {
+        flex-direction: column;
+    }
+
+    #projets, #interets {
+        flex-direction: column;
+    }
+
+    .projet {
+        width: 100%;
+    }
+}
+
+/* Mode impression : tout conserver avec le bon affichage */
+@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    body {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    section {
+        padding: 30px 15px;
+        margin-bottom: 20px;
+        page-break-inside: avoid; /* Évite que les sections soient coupées */
+    }
+
+    h1, h2 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    /* Afficher la navigation uniquement en haut de la première page */
+    header {
+        position: relative !important;
+        page-break-after: avoid;
+    }
+
+    nav {
+        border-bottom: 2px solid #ff6f61; /* Séparer visuellement */
+        padding-bottom: 10px;
+    }
+
+    /* Empêcher la répétition de la navigation sur chaque page */
+    nav ul {
+        display: block;
+    }
+
+    /* S'assurer que le footer s'affiche bien à la fin */
+    footer {
+        display: block;
+        position: relative;
+        text-align: center;
+        padding: 20px;
+        border-top: 2px solid #ff6f61; /* Séparer visuellement */
+        page-break-before: always; /* S'assurer qu'il soit bien en bas */
+    }
+}

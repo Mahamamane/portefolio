@@ -8,10 +8,10 @@
   <meta name="author" content="Abou Idi Mahamane Lawali">
   
   <!-- Favicon (à générer via https://realfavicongenerator.net/) -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+<link rel="icon" href="photo.jpg" sizes="32x32" type="image/jpeg">
+<link rel="apple-touch-icon" href="photo.jpg">
+<meta name="msapplication-TileImage" content="photo.jpg">
+
   
   <title>Abou Idi Mahamane Lawali | Développeur Full Stack & Formateur Digital</title>
   
@@ -25,295 +25,335 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <style>
-    /* Assurez-vous que les boutons sont visibles */
+ /* Assurez-vous que les boutons sont visibles */
 .btn-hover {
-  position: relative;
-  z-index: 1;
-  transition: all 0.3s ease-in-out;
+ position: relative;
+ z-index: 1;
+ transition: all 0.3s ease-in-out;
 }
 
 /* Effet au survol : zoom et changement de couleur */
 .btn-hover:hover {
-  transform: scale(1.05); /* Zoom léger */
-  background-color: #0056b3;
-  color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ transform: scale(1.05); /* Zoom léger */
+ background-color: #0056b3;
+ color: white;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Style de survol pour le bouton "Mes projets" */
 .btn-outline-light:hover {
-  background-color: #ffffff;
-  color: #0056b3;
-  border-color: #0056b3;
+ background-color: #ffffff;
+ color: #0056b3;
+ border-color: #0056b3;
 }
 
 /* Style de survol pour le bouton "Me contacter" */
 .btn-primary:hover {
-  background-color: #004085;
-  border-color: #004085;
+ background-color: #004085;
+ border-color: #004085;
 }
 
 /* Ajoutez une couleur de fond par défaut pour les boutons */
 .btn-outline-light {
-  border-color: #ffffff;
-  color: white;
+ border-color: #ffffff;
+ color: white;
 }
 
 .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+ background-color: #007bff;
+ border-color: #007bff;
 }
 
-    /* Fade-in animation */
+ /* Fade-in animation */
 .fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.8s ease forwards;
+ opacity: 0;
+ transform: translateY(20px);
+animation: fadeInUp 0.8s ease forwards;
 }
 
 .fade-in.delay-1 {
-  animation-delay: 0.3s;
+ animation-delay: 0.3s;
 }
 
 .fade-in.delay-2 {
-  animation-delay: 0.6s;
+ animation-delay: 0.6s;
 }
 
 @keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: none;
-  }
+ to {
+ opacity: 1;
+ transform: none;
+ }
 }
 
 /* Icon bounce on hover */
 .animate-icon:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
+ transform: translateY(-5px);
+ transition: transform 0.3s ease;
 }
-    :root {
-  --primary-color: #007bff;     /* Bleu professionnel Bootstrap */
-  --secondary-color: #e9f1fb;   /* Bleu très clair presque blanc */
-  --accent-color: #0056b3;      /* Bleu foncé */
-  --text-light: #ffffff;
-  --text-dark: #212529;
-  --text-muted: #6c757d;
-}
-
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      scroll-behavior: smooth;
-      color: var(--text-dark);
-      line-height: 1.6;
-      
-    }
-    
-    .hero {
-      padding: 60px 0; /* réduit la hauteur par défaut */
-      
-      min-height: 75vh;
-  background: linear-gradient(135deg, var(--secondary-color),#007bff);
-  color: var(--text-dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+:root {
+ --primary-color: #007bff;  /* Bleu professionnel Bootstrap */
+ --secondary-color: #e9f1fb;  /* Bleu très clair presque blanc */
+ --accent-color: #0056b3; /* Bleu foncé */
+ --text-light: #ffffff;
+ --text-dark: #212529;
+ --text-muted: #6c757d;
 }
 
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.05)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
-      background-size: cover;
-      z-index: 0;
-    }
-    
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 800px;
-      padding: 0 20px;
-    }
-    .hero img {
-  border: 4px solid #fff;
-  object-fit: cover;
+
+body {
+ font-family: 'Poppins', sans-serif;
+ scroll-behavior: smooth;
+ color: var(--text-dark);
+line-height: 1.6;
+
+ }
+ 
+ .hero {
+ padding: 60px 0; /* réduit la hauteur par défaut */
+
+ min-height: 75vh;
+ background: linear-gradient(135deg, var(--secondary-color),#007bff);
+color: var(--text-dark);
+ display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+position: relative; overflow: hidden;
 }
 
-    .section-title {
-      position: relative;
-      display: inline-block;
-      margin-bottom: 50px;
-      font-weight: 600;
-    }
-    
-    .section-title::after {
-      content: '';
-      position: absolute;
-      bottom: -15px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 80px;
-      height: 3px;
-      background: var(--primary-color);
-    }
-    
-    .bg-light {
-      background-color: #f8f9fa !important;
-    }
-    
-    .bg-dark {
-      background-color: var(--accent-color) !important;
-    }
-    
-    .navbar {
-      transition: all 0.3s ease;
-    }
-    
-    .navbar.scrolled {
-  background-color: #ffffff !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid #dee2e6;
+ .hero::before {
+ content: '';
+ position: absolute;
+ top: 0;
+left: 0;
+width: 100%;
+ height: 100%;
+ background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.05)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+ background-size: cover;
+ z-index: 0;
+ }
+
+ .hero-content {
+position: relative;
+ z-index: 1;
+ max-width: 800px;
+padding: 0 20px;
+ }
+ .hero img {
+ border: 4px solid #fff;
+ object-fit: cover;
 }
-    .skill-card {
-      background: white;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-    
-    .skill-card:hover {
-      transform: translateY(-5px);
-    }
-    
-    .project-card {
-      border: none;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-      margin-bottom: 30px;
-    }
-    
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-    
-    
-    footer {
-      background: linear-gradient(to right, var(--accent-color), var(--secondary-color));
-    }
-    
-    .social-icons a {
-      color: var(--text-light);
-      font-size: 1.5rem;
-      margin: 0 10px;
-      transition: color 0.3s ease;
-    }
-    
-    .social-icons a:hover {
-      color: #adb5bd;
-    }
-    
-    /* Animation */
-    @keyframes zoomFadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.7);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+
+ .section-title {
+ position: relative;
+ display: inline-block;
+ margin-bottom: 50px;
+ font-weight: 600;
+ }
+ 
+ .section-title::after {
+ content: '';
+position: absolute;
+ bottom: -15px;
+ left: 50%;
+transform: translateX(-50%);
+width: 80px;
+ height: 3px;
+background: var(--primary-color);
+}
+
+.bg-light {
+ background-color: #f8f9fa !important;
+ }
+
+.bg-dark {
+background-color: var(--accent-color) !important;
+}
+
+.navbar {
+transition: all 0.3s ease;
+ }
+ 
+.navbar.scrolled {
+ background-color: #ffffff !important;
+ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+ border-bottom: 1px solid #dee2e6;
+}
+.skill-card {
+background: white;
+border-radius: 8px;
+padding: 20px;
+ margin-bottom: 20px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+transform: translateY(-5px);
+}
+
+ .project-card {
+border: none;
+ border-radius: 8px;
+ overflow: hidden;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+ margin-bottom: 30px;
+ }
+
+ .project-card:hover {
+transform: translateY(-5px);
+ }
+
+
+footer {
+ background: linear-gradient(to right, var(--accent-color), var(--secondary-color));
+}
+
+ .social-icons a {
+color: var(--text-light);
+ font-size: 1.5rem;
+ margin: 0 10px;
+ transition: color 0.3s ease;
+}
+
+ .social-icons a:hover {
+ color: #adb5bd;
+ }
+
+ /* Animation */
+@keyframes zoomFadeIn {
+ 0% {
+ opacity: 0;
+ transform: scale(0.7);
+ }
+100% {
+ opacity: 1;
+ transform: scale(1);
+}
 }
 
 .animate-photo {
-  animation: zoomFadeIn 1s ease-out forwards;
+ animation: zoomFadeIn 1s ease-out forwards;
 }
 
-    /* Responsive */
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2.5rem;
-      }
-      
-      .section-title {
-        margin-bottom: 30px;
-      }
-    }
-    /* Ajoute ceci dans le <style> */
+ /* Responsive */
+ @media (max-width: 768px) {
+.hero h1 {
+ font-size: 2.5rem;
+ }
+
+ .section-title {
+ margin-bottom: 30px;
+ }
+}
+ /* Ajoute ceci dans le <style> */
 #about {
-  color: var(--text-dark); /* Assure un bon contraste */
+ color: var(--text-dark); /* Assure un bon contraste */
 }
 
 #about p {
-  color: #495057; /* Gris foncé lisible */
-  font-size: 1.1rem;
+ color: #495057; /* Gris foncé lisible */
+ font-size: 1.1rem;
 }
 @keyframes floating {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+ 0% { transform: translateY(0); }
+50% { transform: translateY(-10px); }
+ 100% { transform: translateY(0); }
 }
 
 .floating-photo {
-  animation: floating 3s ease-in-out infinite;
+ animation: floating 3s ease-in-out infinite;
 }
 .floating-photo:hover {
-  transform: translateY(-15px) scale(1.05);
-  transition: transform 0.3s ease;
+ transform: translateY(-15px) scale(1.05);
+ transition: transform 0.3s ease;
 }
 .card-hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
 
-  .card-hover:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  .card-body {
-    opacity: 0;
-    animation: fadeInUp 1s ease-out forwards;
-  }
-
-  .card-hover:nth-child(1) .card-body {
-    animation-delay: 0.2s;
-  }
-
-  .card-hover:nth-child(2) .card-body {
-    animation-delay: 0.4s;
-  }
-
-  .card-hover:nth-child(3) .card-body {
-    animation-delay: 0.6s;
-  }
-
-  .card-hover:nth-child(4) .card-body {
-    animation-delay: 0.8s;
-  }
-
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  .social-icons .social-icon:hover {
-  color: #007bff;
-  transform: scale(1.1);
-  transition: transform 0.3s ease, color 0.3s ease;
+.card-hover:hover {
+ transform: translateY(-10px);
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-  </style>
+ .card-body {
+ opacity: 0;
+ animation: fadeInUp 1s ease-out forwards;
+ }
+
+.card-hover:nth-child(1) .card-body {
+ animation-delay: 0.2s;
+ }
+
+ .card-hover:nth-child(2) .card-body {
+ animation-delay: 0.4s;
+}
+
+ .card-hover:nth-child(3) .card-body {
+ animation-delay: 0.6s;
+ }
+
+ .card-hover:nth-child(4) .card-body {
+ animation-delay: 0.8s;
+ }
+
+ @keyframes fadeInUp {
+ to {
+ opacity: 1;
+ transform: translateY(0);
+ }
+ }
+ .social-icons .social-icon:hover {
+ color: #007bff;
+ transform: scale(1.1);
+ transition: transform 0.3s ease, color 0.3s ease;
+}
+/* NOUVEAU CSS POUR LE ZOOM/FOCUS */
+.training-card-zoomable {
+ cursor: pointer; /* Indique qu'on peut cliquer */
+ transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+ position: relative; /* Nécessaire pour le z-index */
+ z-index: 1;
+}
+/* Cet état annule l'effet de lévitation et applique le grand zoom/centrage */
+.training-card-zoomable.is-focused:hover {
+ /* Annule le translateY et conserve le transform du zoom */
+ transform: translate(-50%, -50%) scale(1.1); 
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
+}
+
+/* État 'focused' : carte au centre de l'écran */
+.training-card-zoomable.is-focused {
+ position: fixed;
+ top: 50%;
+left: 50%;
+ transform: translate(-50%, -50%) scale(1.1); /* Zoom et centrage */
+width: 90%; /* Prend plus de place horizontalement */
+ max-width: 750px; /* Limite la taille sur grand écran */
+ z-index: 1050; /* Au-dessus de l'overlay */
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+ height: auto !important; /* Laisse la hauteur s'adapter au contenu */
+ overflow: auto; /* Permet le défilement si le contenu est grand */
+ pointer-events: all; 
+}
+/* Cache tout le reste de l'écran */
+.overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: rgba(0, 0, 0, 0.8);
+ z-index: 1040; /* Sous la carte zoomée, mais au-dessus du reste */
+ display: none; /* Caché par défaut */
+}
+.overlay.visible {
+ display: block;
+}
+</style>
 </head>
 <body>
 
@@ -321,9 +361,10 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
 
   <div class="container">
-    <a class="navbar-brand fw-bold" href="#">
-      <i class="bi bi-code-slash me-2"></i>Abou Idi Mahamane Lawali
-    </a>
+<a class="navbar-brand fw-bold d-flex align-items-center" href="#home">
+  <img src="photo.jpg" alt="Abou Idi Mahamane" width="36" height="36" class="rounded-circle me-2">
+  <span>Abou Idi Mahamane Lawali</span>
+</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -335,6 +376,16 @@
         <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
         <li class="nav-item"><a class="nav-link" href="#training">Formations</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        
+<li class="nav-item d-flex align-items-center">
+  <a class="btn btn-outline-primary btn-sm ms-3" 
+     href="Abou_Idi_Mahamane_Lawali.pdf" 
+     target="_blank" rel="noopener noreferrer" 
+     download="Abou_Idi_Mahamane_Lawali.pdf">
+    <i class="bi bi-download me-1"></i>Télécharger mon CV
+  </a>
+</li>
+
       </ul>
     </div>
   </div>
@@ -350,7 +401,7 @@
       </div>
       <div class="col-md-8 text-center text-md-start">
         <h1 class="display-4 fw-bold mb-3">Bonjour, je suis Abou Idi Mahamane Lawali</h1>
-        <p class="lead fs-4 mb-4">Développeur Full Stack & Formateur Digital</p>
+        <p class="lead fs-4 mb-4">Développeur Full Stack, Consultant & Formateur Digital passionné par l’IA</p>
         <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-start gap-3">
           <!-- Bouton "Mes projets" -->
           <a href="#projects" class="btn btn-outline-light btn-lg px-4 py-2 btn-hover">
@@ -360,6 +411,11 @@
           <a href="#contact" class="btn btn-primary btn-lg px-4 py-2 btn-hover">
             <i class="bi bi-envelope-fill me-2"></i>Me contacter
           </a>
+         
+<a href="Abou_Idi_Mahamane_Lawali.pdf" target="_blank" rel="noopener noreferrer" download="Abou_Idi_Mahamane_Lawali.pdf" class="btn btn-outline-light btn-lg px-4 py-2 btn-hover">
+  <i class="bi bi-download me-2"></i>Télécharger mon CV
+</a>
+
         </div>
       </div>
     </div>
@@ -374,11 +430,16 @@
     <h2 class="section-title text-center mb-5 fade-in">À propos de moi</h2>
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center fade-in delay-1">
-        <p class="fs-5">
-          🎓 Titulaire d'un <strong>Bachelor en Génie Logiciel</strong>, je suis passionné par le développement web et mobile, les CMS/CRM (WordPress, Moodle, Prestashop, Odoo) et la <strong>formation professionnelle. </strong>Grâce à mon expertise, je mets mes compétences au service de projets numériques innovants, tout en ayant à cœur de transmettre mon savoir et de former les professionnels de demain. 🚀.  
-          Mon objectif ? <em> Créer un impact durable</em> et <em>apporter une réelle valeur ajoutée, en repoussant les limites du digital pour rendre le monde numérique plus accessible et performant.🔥</em> 
-        </p>
-      </div>
+  <p class="fs-5">
+    Titulaire d’un <strong>Bachelor en Informatique, option Génie Logiciel</strong>, je suis passionné par la <strong>transformation digitale</strong> et les <strong>outils d’intelligence artificielle</strong> 
+    qui permettent de maximiser la productivité et d’automatiser les tâches du quotidien. <br>
+    Spécialisé en <strong>développement web et mobile</strong> ainsi qu’en <strong>CMS/CRM</strong> (WordPress, Moodle, Prestashop, Odoo), 
+    j’aime allier technologie et créativité pour concevoir des solutions numériques modernes et efficaces. <br>
+    Formateur dans l’âme, j’ai à cœur de <strong>partager mes connaissances</strong> et d’aider d’autres passionnés à maîtriser les outils numériques et l’IA pour booster leurs projets.<br>
+    <em>Mon objectif ? Créer un impact durable, inspirer et rendre le digital plus accessible, intelligent et performant. </em>
+  </p>
+</div>
+
     </div>
 
     <div class="row text-center mt-5 fade-in delay-2">
@@ -466,7 +527,7 @@
           <ul class="mt-3">
             <li>WordPress</li>
             <li>PrestaShop</li>
-            <li>Moodle, Odoo</li>
+            <li>Moodle, Odoo,joomla</li>
           </ul>
           <div class="mt-4">
             <div class="progress" style="height: 8px;">
@@ -638,6 +699,50 @@
           </div>
         </div>
       </div>
+     <div class="col-md-6 col-lg-4">
+    
+        <div class="card-body">
+            <div class="d-flex align-items-center">
+                <div class="project-img-container">
+                    <img src="logo_pressing_app.png" class="project-img" alt="Pressing Pro App" loading="lazy">
+                </div>
+                <h3 class="h5 card-title ms-3">Pressing Pro App </h3>
+            </div>
+            <p class="card-text">Application mobile Flutter pour la gestion complète d'un pressing. Fonctionnalités : enregistrement des commandes clients, suivi de l'état du linge (reçu, en lavage, prêt, livré), gestion des tarifs, notifications clients (push).</p>
+            <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-primary">Flutter</span>
+                <span class="badge bg-primary">Dart</span>
+                
+            </div>
+        </div>
+        <div class="card-footer bg-transparent border-top-0">
+            <a href="#" class="btn btn-outline-primary btn-sm">Voir le projet</a>
+        </div>
+    </div>
+
+      <div class="col-md-6 col-lg-4">
+    <div class="project-card card h-100">
+        <div class="card-body">
+            <div class="d-flex align-items-center">
+                <div class="project-img-container">
+                    <img src="logo_salon_beauty.png" class="project-img" alt="Logiciel Beauty & Co" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover;" loading="lazy">
+                </div>
+                <h3 class="h5 card-title ms-3">Logiciel de gestion de salon de beauté </h3>
+            </div>
+            <p class="card-text">Système complet pour la gestion des salons de beauté et de coiffure, incluant la prise de rendez-vous par employé, la gestion des stocks et un tableau de bord financier unifié (Caisse).</p>
+            <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-primary">PHP</span>
+                <span class="badge bg-primary">MySQL</span>
+                <span class="badge bg-primary">Bootstrap 4</span>
+                <span class="badge bg-secondary">FullCalendar</span>
+                <span class="badge bg-secondary">Statistiques CA</span>
+            </div>
+        </div>
+        <div class="card-footer bg-transparent border-top-0">
+            <a href="#" class="btn btn-outline-primary btn-sm">Voir le projet</a>
+        </div>
+    </div>
+</div>
     </div>
    
     <div class="text-center mt-5">
@@ -749,23 +854,7 @@
             </div>
             <p class="text-muted mb-3">Maîtrisez les outils d'intelligence artificielle comme ChatGPT, Gemini, Deepseek et bien d'autres pour automatiser vos tâches et optimiser votre productivité.</p>
             <div class="d-flex justify-content-center">
-              <div class="me-4">
-                <h5>ChatGPT</h5>
-                <ul class="list-unstyled">
-                  <li><i class="bi bi-chat-square-text me-2"></i> Applications avancées</li>
-                </ul>
-              </div>
-              <div class="me-4">
-                <h5>Gemini</h5>
-                <ul class="list-unstyled">
-                  <li><i class="bi bi-puzzle me-2"></i> Exploration IA avancée</li>
-                </ul>
-              </div>
-              <div>
-                <h5>Deepseek</h5>
-                <ul class="list-unstyled">
-                  <li><i class="bi bi-search me-2"></i> Recherche avancée avec IA</li>
-                </ul>
+              
               </div>
             </div>
           </div>
@@ -782,6 +871,147 @@
     </div>
   </div>
 </section>
+
+
+<section class="py-5" id="my-trainings">
+    <div class="container py-5">
+        <h2 class="section-title text-center mb-5">Mes Formations Animées & Interventions</h2>
+        <p class="text-center lead mb-5 fade-in delay-1">
+            Retour sur quelques-unes des sessions que j'ai eu l'honneur d'animer ou auxquelles j'ai participé en tant que speaker.
+        </p>
+
+        <div class="row g-4">
+            
+            <div class="col-md-6 col-lg-4 fade-in delay-2">
+                <div class="project-card card h-100 card-hover"> 
+                    <div class="card-body">
+                        <!-- autoplay lent (4s) — contrôles fonctionnels -->
+                        <div id="carouselTraining4" class="carousel slide mb-3" data-bs-ride="carousel" data-bs-interval="4000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="ia_nextleader_1.jpeg" class="d-block w-100 rounded" alt="Session IA Youth Leadership - 1" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="ia_nextleader_2.jpeg" class="d-block w-100 rounded" alt="Session IA Youth Leadership - 2" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="ia_nextleader_3.jpeg" class="d-block w-100 rounded" alt="Session IA Youth Leadership - 3" style="height: 200px; object-fit: cover;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTraining4" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Précédent</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselTraining4" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Suivant</span>
+                            </button>
+                        </div>
+                        <h3 class="h5 card-title fw-bold text-primary">
+                            <i class="bi bi-robot me-2"></i> Formation IA - Youth Leadership
+                        </h3>
+                        <span class="badge bg-secondary mb-2">28 Août 2025</span>
+                        <span class="badge bg-secondary mb-2">Novatech Niger</span>
+                        <p class="card-text small text-muted">
+                            Rôle : Animateur. Session pour les jeunes du programme "Youth Leadership" sur les notions de base de l'IA et son intégration concrète dans le quotidien.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-warning text-dark">Intelligence Artificielle</span>
+                            <span class="badge bg-warning text-dark">Formation Jeunesse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 fade-in delay-3">
+                <div class="project-card card h-100 card-hover">
+                    <div class="card-body">
+                        <div id="carouselTraining5" class="carousel slide mb-3" data-bs-ride="carousel" data-bs-interval="4000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="build_ia_1.jpeg" class="d-block w-100 rounded" alt="Session Build with AI Gemini - 1" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="build_ia_2.jpeg" class="d-block w-100 rounded" alt="Session Build with AI Gemini - 2" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="build_ia_3.jpeg" class="d-block w-100 rounded" alt="Session Build with AI Gemini - 3" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="build_ia_4.jpeg" class="d-block w-100 rounded" alt="Session Build with AI Gemini - 4" style="height: 200px; object-fit: cover;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTraining5" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Précédent</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselTraining5" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Suivant</span>
+                            </button>
+                        </div>
+                        <h3 class="h5 card-title fw-bold text-primary">
+                            <i class="bi bi-stars me-2"></i> Conférence Build with AI (Gemini)
+                        </h3>
+                        <span class="badge bg-secondary mb-2">12 Juillet 2025</span>
+                        <span class="badge bg-secondary mb-2">Novatech, Niamey</span>
+                        <p class="card-text small text-muted">
+                            Rôle : Animateur. Première session "Build with AI" à Niamey, centrée sur Gemini. Événement marqué par l'énergie des participants malgré la pluie.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-warning text-dark">Google Gemini</span>
+                            <span class="badge bg-warning text-dark">Intelligence Artificielle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 fade-in delay-4">
+                <div class="project-card card h-100 card-hover">
+                    <div class="card-body">
+                        <div id="carouselTraining6" class="carousel slide mb-3" data-bs-ride="carousel" data-bs-interval="4000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="devfest_1.jpg" class="d-block w-100 rounded" alt="Session DevFest Niamey - 1" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="devfest_2.jpg" class="d-block w-100 rounded" alt="Session DevFest Niamey - 2" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="devfest_3.jpg" class="d-block w-100 rounded" alt="Session DevFest Niamey - 3" style="height: 200px; object-fit: cover;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTraining6" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Précédent</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselTraining6" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Suivant</span>
+                            </button>
+                        </div>
+                        <h3 class="h5 card-title fw-bold text-primary">
+                            <i class="bi bi-cpu-fill me-2"></i> Conférence ML à l'IA Générative
+                        </h3>
+                        <span class="badge bg-secondary mb-2">11 Octobre 2025</span>
+                        <span class="badge bg-secondary mb-2">DevFest Niamey</span>
+                        <p class="card-text small text-muted">
+                            Rôle : Speaker & Organisateur. Présentation sur la transition du Machine Learning à l'IA Générative. Forte implication dans l'organisation du #DevFestNiamey 2025.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-danger">Machine Learning</span>
+                            <span class="badge bg-danger">IA Générative</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Garder ensuite UNE SEULE inclusion de bootstrap (remplacer les deux lignes dupliquées par celle-ci) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Contact -->
 <section class="py-5" id="contact">
@@ -814,26 +1044,7 @@
                   <a href="https://wa.me/+22788575851" aria-label="WhatsApp" class="social-icon"><i class="bi bi-whatsapp text-primary"></i></a>
                 </div>
               </div>
-              <div class="col-md-6">
-                <h3 class="h5 mb-4">Envoyez un message</h3>
-                <form>
-                  <div class="mb-3">
-                    <label for="name" class="form-label">Nom</label>
-                    <input type="text" class="form-control" id="name" placeholder="Entrez votre nom" required>
-                  </div>
-                  <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Votre email" required>
-                  </div>
-                  <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3" placeholder="Votre message ici" required></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary w-100 btn-animation">
-                    <i class="bi bi-send-fill me-2"></i>Envoyer
-                  </button>
-                </form>
-              </div>
+             
             </div>
           </div>
         </div>
@@ -847,50 +1058,155 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6 text-center text-md-start">
-        <p class="mb-0">&copy; 2025 Abou Idi Mahamane Lawali. Tous droits réservés.</p>
-      </div>
+  <p class="mb-0">
+    &copy; <script>document.write(new Date().getFullYear());</script> Abou Idi Mahamane Lawali. Tous droits réservés.
+  </p>
+</div>
+
       
     </div>
   </div>
 </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Scripts personnalisés -->
+
+
 <script>
-  // Navbar scroll effect
-  window.addEventListener('scroll', function() {
+document.addEventListener('DOMContentLoaded', function() {
+    // Navbar scroll
     const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
-  });
-  
-  // Animation au défilement
-  document.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('scroll', function() {
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Fade-in observer
     const animateElements = document.querySelectorAll('.fade-in');
-    
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = 1;
-          entry.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-    
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
     animateElements.forEach(el => {
-      el.style.opacity = 0;
-      el.style.transform = 'translateY(20px)';
-      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-      observer.observe(el);
+        el.style.opacity = 0;
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
     });
-  });
+
+    // Zoom/Focus
+    const zoomableCards = document.querySelectorAll('.project-card');
+    let overlay = document.querySelector('.overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.classList.add('overlay');
+        document.body.appendChild(overlay);
+    }
+    const originalPositions = new Map();
+
+    zoomableCards.forEach(card => {
+        card.classList.add('training-card-zoomable');
+
+        card.addEventListener('click', function(event) {
+            // Allow carousel controls to work without triggering zoom
+            if (event.target.closest('.carousel-control-prev') || event.target.closest('.carousel-control-next')) {
+                return;
+            }
+
+            if (card.classList.contains('is-focused')) return;
+
+            // Close other focused cards
+            document.querySelectorAll('.is-focused').forEach(c => c.classList.remove('is-focused'));
+
+            // Save position and move to body to avoid stacking-context issues
+            originalPositions.set(card, { parent: card.parentNode, nextSibling: card.nextSibling });
+            document.body.appendChild(card);
+
+            // Re-init any bootstrap carousels inside the moved card to ensure controls + autoplay work
+            const carousels = card.querySelectorAll('.carousel');
+            carousels.forEach(cEl => {
+                // ensure data attributes exist
+                if (!cEl.getAttribute('data-bs-interval')) cEl.setAttribute('data-bs-interval', '4000');
+                if (!cEl.getAttribute('data-bs-ride')) cEl.setAttribute('data-bs-ride', 'carousel');
+                // create or get instance with the desired interval
+                try {
+                    const interval = parseInt(cEl.getAttribute('data-bs-interval'), 10) || 4000;
+                    bootstrap.Carousel.getOrCreateInstance(cEl, { interval: interval, ride: 'carousel' });
+                } catch (e) {
+                    // ignore if bootstrap not available yet
+                    console.warn('Carousel init failed:', e);
+                }
+            });
+
+            card.classList.add('is-focused');
+            overlay.classList.add('visible');
+            document.body.style.overflow = 'hidden';
+
+            zoomableCards.forEach(c => {
+                if (c !== card) {
+                    c.style.opacity = '0';
+                    c.style.pointerEvents = 'none';
+                }
+            });
+
+            event.stopPropagation();
+        });
+    });
+
+    function closeFocus() {
+        const focusedCard = document.querySelector('.training-card-zoomable.is-focused');
+        if (!focusedCard) return;
+
+        // pause carousels in the focused card to avoid continuing animation during move back
+        focusedCard.querySelectorAll('.carousel').forEach(cEl => {
+            try {
+                const inst = bootstrap.Carousel.getInstance(cEl);
+                if (inst) inst.pause();
+            } catch (e) {}
+        });
+
+        focusedCard.classList.remove('is-focused');
+        overlay.classList.remove('visible');
+        document.body.style.overflow = '';
+
+        zoomableCards.forEach(c => {
+            c.style.opacity = '1';
+            c.style.pointerEvents = 'auto';
+        });
+
+        const original = originalPositions.get(focusedCard);
+        if (original && original.parent) {
+            original.parent.insertBefore(focusedCard, original.nextSibling);
+            originalPositions.delete(focusedCard);
+        }
+
+        // re-init/resume carousels after moving back
+        focusedCard.querySelectorAll('.carousel').forEach(cEl => {
+            try {
+                const interval = parseInt(cEl.getAttribute('data-bs-interval'), 10) || 4000;
+                const inst = bootstrap.Carousel.getOrCreateInstance(cEl, { interval: interval, ride: 'carousel' });
+                inst.cycle();
+            } catch (e) {}
+        });
+    }
+
+    overlay.addEventListener('click', closeFocus);
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') closeFocus();
+    });
+
+    // Ensure carousels on page start use a moderate interval (4s)
+    document.querySelectorAll('.carousel').forEach(cEl => {
+        try {
+            if (!cEl.getAttribute('data-bs-interval')) cEl.setAttribute('data-bs-interval', '4000');
+            bootstrap.Carousel.getOrCreateInstance(cEl, { interval: parseInt(cEl.getAttribute('data-bs-interval'), 10) || 4000 });
+        } catch (e) {}
+    });
+});
 </script>
+
+
 </body>
 </html>
